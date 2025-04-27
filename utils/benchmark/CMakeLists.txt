@@ -153,7 +153,8 @@ else()
   endif()
   # ICC17u2: overloaded virtual function "benchmark::Fixture::SetUp" is only partially overridden
   # (because of deprecated overload)
-  add_cxx_compiler_flag(-wd654)
+  # Remove this compiler breakig flag - todo: Investigate its purpose
+  # add_cxx_compiler_flag(-wd654)
   add_cxx_compiler_flag(-Wthread-safety)
   if (HAVE_CXX_FLAG_WTHREAD_SAFETY)
     cxx_feature_check(THREAD_SAFETY_ATTRIBUTES)
