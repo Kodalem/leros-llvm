@@ -11,6 +11,7 @@
 #define LLVM_DEMANGLE_DEMANGLE_H
 
 #include <cstddef>
+#include <cstdint> // Added for uint8_t, uint16_t, etc.
 
 namespace llvm {
 /// This is a llvm local version of __cxa_demangle. Other than the name and

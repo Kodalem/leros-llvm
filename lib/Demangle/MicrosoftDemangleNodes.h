@@ -5,6 +5,7 @@
 #include "llvm/Demangle/StringView.h"
 #include <array>
 #include <cstdint>
+#include <cstddef> // Added for uintptr_t and size_t
 
 class OutputStream;
 
